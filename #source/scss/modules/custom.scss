@@ -164,13 +164,13 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 10px 27px;
     color: white;
     background-color: $blue;
     line-height: normal;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 400;
-    border-radius: 10px;
+    border-radius: 25px;
     transition: 0.2s ease;
     // @media (max-width: 1920px) {
     //     padding: 5px 17px 5px;
@@ -185,6 +185,7 @@ a {
     //     border-radius: 7px;
     // }
     &:hover {
+        color: white;
         opacity: 0.8;
         transition: 0.2s ease;
     }

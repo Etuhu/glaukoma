@@ -1,0 +1,26 @@
+.about {
+    padding-top: 125px;
+    .about-content {
+        position: relative;
+        background-color: $ligntblue;
+        padding: 120px 10% 50px 10%;
+        .about-content-image {
+            position: absolute;
+            top: -125px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 25px solid #fbfbfb;
+            border-radius: 50%;
+        }
+        .about-content-text {
+            font-weight: 300;
+            h2 {
+                font-size: 2rem;
+                font-weight: 300;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+                margin-top: 0;
+            }
+        }
+    }
+}

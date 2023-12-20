@@ -17,10 +17,10 @@
 	<body>
 		<div id="pre-loader" class="pre-loader" style="opacity: 0; display: none"></div>
 		<div class="fader"></div>
-		<div class="header header--index">
+		<div class="header header--index fixed-top">
 			<div class="container">
 				<div class="header-wrapper row">
-					<div class="col-xxl-2 col-lg-3 offset-xxl-1 offset-lg-0 col-4 offset-6 logo-wrapper">
+					<div class="col-xxl-2 col-lg-3 offset-xxl-1 offset-lg-0 col-4 logo-wrapper">
 						<a href="/"><img src="img/logo.svg" width="203" height="50" class="img-fluid logo" /></a>
 					</div>
 					<div class="col-xxl-8 col-lg-8 top-menu-wrapper hidden">
@@ -54,10 +54,10 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-lg-2 col-4 d-lg-none d-flex navbar-toggler-wrapper">
+					<div class="col-lg-2 col-4 offset-lg-0 offset-2 justify-content-end d-lg-none d-flex navbar-toggler-wrapper">
 						<a href="#recordModal" class="basic-button" data-bs-toggle="modal" data-bs-target="#recordModal">Записаться</a>
 					</div>
-					<div class="col-lg-1 col-2 d-lg-none d-flex navbar-toggler-wrapper">
+					<div class="col-lg-1 col-2 justify-content-end d-lg-none d-flex navbar-toggler-wrapper">
 						<button class="navbar-toggler show" type="button" data-bs-toggle="collapse" data-bs-target="#sitemenu" aria-controls="sitemenu" aria-expanded="false" aria-label="Раскрыть навигацию">
 							<span class="navbar-toggler-icon">
 								<span></span>
@@ -68,14 +68,14 @@
 			</div>
 		</div>
 		<main class="index-page">
-			<picture>
-				<source srcset="/cache/htimg/slider-phone//upload/gaufrette/a/4/0/a409be9205b3392b60cfc68c4c1d2d3417410dac/1150500.jpg.jpg" media="(max-width: 575px)" />
-				<source srcset="/cache/htimg/slider-medium//upload/gaufrette/e/f/f/eff8544e899af220e994b2e0d3031f09a3eb68f2/1480500.jpg.jpg" media="(max-width: 991px)" />
-				<source srcset="img/slide.jpg" />
-				<img class="img-fluid w-100 top-slider__bg" src="img/slide.jpg" width="2560" height="1440" />
-			</picture>
 			<section class="top-slider">
-				<div class="container">
+				<picture>
+					<source srcset="/cache/htimg/slider-phone//upload/gaufrette/a/4/0/a409be9205b3392b60cfc68c4c1d2d3417410dac/1150500.jpg.jpg" media="(max-width: 575px)" />
+					<source srcset="/cache/htimg/slider-medium//upload/gaufrette/e/f/f/eff8544e899af220e994b2e0d3031f09a3eb68f2/1480500.jpg.jpg" media="(max-width: 991px)" />
+					<source srcset="img/slide.jpg" />
+					<img class="img-fluid w-100 top-slider__bg" src="img/slide.jpg" width="2560" height="1440" />
+				</picture>
+				<div class="container content-wrapper">
 					<div class="top-slider__content top-slider__content--top">
 						<div class="row">
 							<h1 class="col-xxl-8 col-xl-7 col-lg-6 top-slider__title">Результат, который вы увидите</h1>
@@ -88,7 +88,7 @@
 								<br />
 								Сделайте первый шаг к качественной жизни уже сейчас
 							</div>
-							<a href="#about">
+							<a href="#about" class="top-slider__scroll-link">
 								<svg width="30" height="64" viewBox="0 0 30 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect x="0.5" y="0.5" width="29" height="49" rx="14.5" stroke="#525252" />
 									<path d="M15 10L15 18" stroke="#525252" stroke-width="5" stroke-linecap="round" />
@@ -102,21 +102,23 @@
 			<section class="about" id="about">
 				<div class="container">
 					<div class="row about-wrapper">
-						<div class="col-xxl-10 offset-xxl-1 about-content">
-							<div class="about-content-image">
-								<img src="img/noskova.png" width="200" heght="200" class="img-fluid" />
-							</div>
-							<div class="about-content-text">
-								<h2 class="basic-title">Добро пожаловать!</h2>
-								<p>Глаукомная школа от офтальмологического центра «Хорошее зрение» - это то место, где врачи офтальмологи-глаукоматологи расскажут вам, что такое глаукома, какие существуют способы лечения и как наша клиника может вам помочь.</p>
-								<p>Также в школе вас ждет бесплатная экспресс-диагностика (специализированная, при глаукоме), на основании которой проводим небольшой консультативный прием.</p>
-								<p>В нашу глаукомную школу мы приглашаем всех пациентов, у которых поставлен диагноз «Глаукома», а также их родственников и знакомых.</p>
-								<div class="about-content-author">
-									<strong>Носкова Наталья Геннадьевна</strong>
-									<br />
-									Руководитель Центра глаукомы,
-									<br />
-									врач-глаукоматолог
+						<div class="col-xxl-10 offset-xxl-1">
+							<div class="about-content">
+								<div class="about-content-image">
+									<img src="img/noskova.png" width="200" heght="200" class="img-fluid" />
+								</div>
+								<div class="about-content-text">
+									<h2>Добро пожаловать!</h2>
+									<p>Глаукомная школа от офтальмологического центра «Хорошее зрение» - это то место, где врачи офтальмологи-глаукоматологи расскажут вам, что такое глаукома, какие существуют способы лечения и как наша клиника может вам помочь.</p>
+									<p>Также в школе вас ждет бесплатная экспресс-диагностика (специализированная, при глаукоме), на основании которой проводим небольшой консультативный прием.</p>
+									<p>В нашу глаукомную школу мы приглашаем всех пациентов, у которых поставлен диагноз «Глаукома», а также их родственников и знакомых.</p>
+									<div class="about-content-author">
+										<strong>Носкова Наталья Геннадьевна</strong>
+										<br />
+										Руководитель Центра глаукомы,
+										<br />
+										врач-глаукоматолог
+									</div>
 								</div>
 							</div>
 						</div>
