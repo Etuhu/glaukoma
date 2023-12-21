@@ -21,6 +21,14 @@
                 margin-bottom: 1rem;
                 margin-top: 0;
             }
+            .about-content-author {
+                margin-top: 1.75rem;
+                font-size: 0.75rem;
+                > strong {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 }

@@ -133,6 +133,7 @@ a {
     font-weight: 800;
     font-size: 2.67rem;
     line-height: 1.36;
+    margin-bottom: 0;
     // @media (max-width: 575px) {
     //     font-size: 2rem;
     // }
@@ -189,4 +190,39 @@ a {
         opacity: 0.8;
         transition: 0.2s ease;
     }
+}
+
+.arrow-right-block {
+    border-radius: 8px;
+    background-color: #DEF0FF;
+    color: #1D70B7;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text {
+        padding-right: 35px;
+    }
+    .arrow-content {
+        width: 66px;
+        height: 66px;
+        background-color: #9CD1FF;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        > svg {
+            width: 50px;
+            height: 30px;
+        }
+    }
+}
+
+.leftside-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1;
 }

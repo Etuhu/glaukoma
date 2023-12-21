@@ -387,6 +387,16 @@ const doctorSwiper = new Swiper(".doctor-swiper", {
 	}
 });
 
+//Переключение стадий глаукомы по клику на табы
+let stagesTabButtons = document.querySelectorAll(".stages-tabs button.nav-link");
+let stagesImagesWrapper = document.querySelector(".stages-image");
+
+stagesTabButtons.forEach(button => {
+    button.addEventListener('shown.bs.tab', function (event) {
+        let buttonStageNumber = button.dataset.stage;
+        stagesImagesWrapper.dataset.stage = buttonStageNumber;
+    });
+});
 
 //Подключение кастомного скролла при ширине экрана больше 991 пикселя
 if ($(window).width() > 991) {
