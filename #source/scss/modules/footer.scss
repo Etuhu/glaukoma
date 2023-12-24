@@ -1,0 +1,108 @@
+.footer {
+    .footer-top-row {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 0.85rem;
+        color: $font-color;
+        .left-block {
+            padding-left: 50px;
+            @media (max-width: 1399px) {
+                padding-left: 0;
+            }
+            .contacts {
+                display: flex;
+                .address {
+                    margin-left: 70px;
+                    font-size: 0.85rem;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    a {
+                        color: $font-color;
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+            .license-link {
+                display: block;
+                width: fit-content;
+                margin-top: 50px;
+                font-size: 0.85rem;
+                font-weight: 400;
+                line-height: 1.2;
+                color: $font-color;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+        .social {
+            p {
+                margin-bottom: 0.5rem;
+            }
+            .social-wrapper {
+                display: flex;
+                gap: 15px;
+                .social-item {
+                    &:hover {
+                        svg {
+                            path {
+                                fill: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom-row {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 0.65rem;
+        font-weight: 300;
+        line-height: 1.2;
+        color: $font-color;
+        background-color: #F2F7FA;
+        .footer-controls {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 3%;
+            @media (max-width: 1799px) {
+                gap: 1%;
+            }
+            .footer-controls-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 22%;
+                max-width: 22%;
+                @media (max-width: 1799px) {
+                    width: 49%;
+                    max-width: 49%;
+                    margin-bottom: 20px;
+                }
+                &:hover {
+                    .text {
+                        color: $blue;
+                    }
+                }
+                .pic {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .footer-attention {
+            padding-right: 2rem;
+        }
+        .footer-warning {
+            padding-top: 2rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.2;
+            letter-spacing: 3.2px;
+            text-align: center;
+        }
+    }
+}

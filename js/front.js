@@ -264,6 +264,7 @@ const clientFeedbackSwiper = new Swiper(".client-feedback-swiper", {
 	let bodyFader = body.querySelector(".fader");
 	let hiddenMenu = document.querySelector(".top-menu-wrapper");
 	let openMenuButton = document.querySelector(".navbar-toggler");
+	let headerModalButton = document.querySelector(".header-modal-button");
 	let closeMenuButton = hiddenMenu.querySelector(".close-menu-button");
 	let headerMenuItems = hiddenMenu.querySelectorAll(".navbar > ul > li > a");
 	let logoWrapper = document.querySelector(".logo-wrapper");
@@ -271,6 +272,7 @@ const clientFeedbackSwiper = new Swiper(".client-feedback-swiper", {
 	let showMenuHandler = function () {
 		hiddenMenu.classList.toggle("hidden");
 		logoWrapper.classList.toggle("hidden");
+        headerModalButton.classList.toggle("hidden");
 		body.classList.toggle("fixed");
 	};
 
@@ -312,7 +314,7 @@ const clientFeedbackSwiper = new Swiper(".client-feedback-swiper", {
         slidesPerView: 1,
         slidesPerGroup: 1,
         speed: 500,
-        simulateTouch: true,
+        // simulateTouch: true,
         spaceBetween: 0,
         watchOverflow: true,
         effect: 'fade',
@@ -326,7 +328,7 @@ const clientFeedbackSwiper = new Swiper(".client-feedback-swiper", {
         },
     });
 
-    let therapyListItems = document.querySelectorAll(".accordion-therapy .accordion-button");
+    let therapyListItems = document.querySelectorAll(".accordion-therapy .accordion-therapy-link");
 
 
     therapyListItems.forEach(function(therapyListItem, index){
@@ -344,7 +346,7 @@ const doctorSwiper = new Swiper(".doctor-swiper", {
 	speed: 300,
 	grabCursor: true,
 	simulateTouch: true,
-	spaceBetween: 150,
+	spaceBetween: 100,
 	watchOverflow: true,
 	touchReleaseOnEdges: true,
 	// freeMode: {
@@ -382,7 +384,7 @@ const doctorSwiper = new Swiper(".doctor-swiper", {
 		},
 		1800: {
 		  slidesPerView: 4,
-		  spaceBetween: 150
+		  spaceBetween: 100
 		}
 	}
 });

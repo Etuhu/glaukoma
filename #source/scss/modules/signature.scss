@@ -1,6 +1,10 @@
 .signature {
 	padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+	@media (max-width: 1199px) {
+		padding-top: 2.5rem;
+		padding-bottom: 2rem;
+	}
 	.signature-row {
 		padding-top: 30px;
 	}
@@ -17,6 +21,15 @@
             font-weight: 300;
             margin-top: 1.3rem;
             max-width: 80%;
+			@media (max-width: 1920px) {
+				max-width: 75%;
+			}
+			@media (max-width: 1799px) {
+				max-width: 80%;
+			}
+            @media (max-width: 1599px) {
+				max-width: 90%;
+			}
         }
 	}
 }
