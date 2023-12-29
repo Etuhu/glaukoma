@@ -318,6 +318,7 @@ const clientFeedbackSwiper = new Swiper(".client-feedback-swiper", {
         spaceBetween: 0,
         watchOverflow: true,
         effect: 'fade',
+        // allowTouchMove: true,
         navigation: {
             nextEl: ".therapy-swiper-button-next",
             prevEl: ".therapy-swiper-button-prev",
@@ -326,6 +327,13 @@ const clientFeedbackSwiper = new Swiper(".client-feedback-swiper", {
             el: ".therapy-swiper-pagination",
             // clickable: "true",
         },
+        // breakpoints: {
+        //     320: {
+        //         allowTouchMove: false,
+        //     },
+        //     992: {
+        //         allowTouchMove: true,
+        //     },
     });
 
     let therapyListItems = document.querySelectorAll(".accordion-therapy .accordion-therapy-link");
@@ -359,11 +367,11 @@ const doctorSwiper = new Swiper(".doctor-swiper", {
 	},
 	breakpoints: {
 		320: {
-          slidesPerView: 2,
+          slidesPerView: 1.5,
 		  spaceBetween: 15,
 		},
-		500: {
-          slidesPerView: 3,
+		576: {
+          slidesPerView: 2,
 		  spaceBetween: 15
 		},
 		768: {

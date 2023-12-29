@@ -6,6 +6,7 @@
         .accordion-item {
             margin-bottom: 15px;
             border: unset;
+            background-color: rgba(255, 255, 255, 0);
         }
         .accordion-button {
             border-radius: 60px;
@@ -18,6 +19,9 @@
                 padding-top: 13px;
                 padding-bottom: 13px;
             }
+            @media (max-width: 991px) {
+                font-weight: 700;
+            }
             &::after {
                 background-position: center;
                 background-image: url("../img/shevron-white.svg");
@@ -29,6 +33,11 @@
                 @media (max-width: 1399px) {
                     width: 35px;
                     height: 35px;
+                }
+                @media (max-width: 575px) {
+                    width: 30px;
+                    height: 30px;
+                    background-size: 45%;
                 }
             }
             &[aria-expanded=true] {

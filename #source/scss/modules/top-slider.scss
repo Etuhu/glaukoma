@@ -26,7 +26,10 @@
             padding-top: 170px;
         }
         @media (max-width: 991px) {
-            padding-top: 15%;
+            padding-top: 250px;
+        }
+        @media (max-width: 767px) {
+            padding-top: 300px;
         }
     }
     .top-slider__title {
@@ -44,6 +47,9 @@
         }
         @media (max-width: 1199px) {
             font-size: 4rem;
+        }
+        @media (max-width: 575px) {
+            font-size: 3rem;
         }
     }
     .top-slider__subtitle {
@@ -79,12 +85,18 @@
             @media (max-width: 991px) {
                 font-size: 1.1rem;
             }
+            @media (max-width: 575px) {
+                font-size: 1rem;
+            }
         }
         .top-slider__scroll-link {
             display: block;
             margin: 0 auto;
             width: fit-content;
             transition: 0.2s ease;
+            @media (max-width: 575px) {
+                display: none;
+            }
             &:hover {
                 transform: translateY(30px);
                 transition: 0.2s ease;
