@@ -6,6 +6,9 @@
         background-color: rgba(0, 0, 0, 0);
         border: unset;
         border-radius: 0;
+        &:last-child {
+            padding-top: 10px;
+        }
         @media (max-width: 767px) {
             margin-bottom: 1rem;
         }

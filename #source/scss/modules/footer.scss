@@ -4,6 +4,11 @@
         padding-bottom: 2rem;
         font-size: 0.85rem;
         color: $font-color;
+        .logo {
+            @media (max-width: 575px) {
+                width: 250px;
+            }
+        }
         .left-block {
             padding-left: 50px;
             @media (max-width: 1399px) {
@@ -26,9 +31,17 @@
                     }
                     @media (max-width: 575px) {
                         margin-left: 0;
+                        margin-top: 30px;
+                        font-weight: 700;
+                        text-align: center;
+                        line-height: 1.7;
                     }
                     a {
                         color: $font-color;
+                        @media (max-width: 575px) {
+                            font-size: 1.3rem;
+                            font-weight: 400;
+                        }
                         &:hover {
                             color: $blue;
                         }
@@ -43,18 +56,30 @@
                 font-weight: 400;
                 line-height: 1.2;
                 color: $font-color;
+                @media (max-width: 575px) {
+                    margin: 20px auto 0;
+                    max-width: 75%;
+                }
                 &:hover {
                     color: $blue;
                 }
             }
         }
         .social {
+            @media (max-width: 575px) {
+                margin: 20px auto 0;
+                max-width: 50%;
+                text-align: center;
+            }
             p {
                 margin-bottom: 0.5rem;
             }
             .social-wrapper {
                 display: flex;
                 gap: 15px;
+                @media (max-width: 575px) {
+                    justify-content: center;
+                }
                 .social-item {
                     &:hover {
                         svg {
@@ -86,6 +111,10 @@
             @media (max-width: 991px) {
                 order: 1;
             }
+            @media (max-width: 575px) {
+                order: 2;
+                padding-top: 1rem;
+            }
             .footer-controls-item {
                 position: relative;
                 display: flex;
@@ -97,6 +126,11 @@
                     max-width: 49%;
                     margin-bottom: 20px;
                 }
+                @media (max-width: 575px) {
+                    width: 100%;
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                }
                 &:hover {
                     .text {
                         color: $blue;
@@ -104,13 +138,25 @@
                 }
                 .pic {
                     margin-right: 20px;
+                    @media (max-width: 575px) {
+                        display: none;
+                    }
                 }
+            }
+            .footer-controls-title {
+                font-size: 14px;
+                font-weight: 300;
             }
         }
         .footer-attention {
             padding-right: 2rem;
             @media (max-width: 991px) {
                 order: 2;
+            }
+            @media (max-width: 575px) {
+                padding-bottom: 1rem;
+                order: 1;
+                border-bottom: 1px solid rgba(82, 82, 82, 0.50);
             }
         }
         .footer-warning {
@@ -127,6 +173,10 @@
             }
             @media (max-width: 767px) {
                 font-size: 1rem;
+            }
+            @media (max-width: 575px) {
+                order: 3;
+                border-top: 1px solid rgba(82, 82, 82, 0.50);
             }
         }
     }
