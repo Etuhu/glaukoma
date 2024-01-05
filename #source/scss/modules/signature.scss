@@ -7,8 +7,17 @@
 	}
 	.signature-row {
 		padding-top: 30px;
+		@media (max-width: 767px) {
+			padding-top: 50px;
+		}
+		@media (max-width: 575px) {
+			padding-top: 40px;
+		}
 	}
 	.signature-item {
+		@media (max-width: 767px) {
+			margin-bottom: 15px;
+		}
 		> .content {
 			display: flex;
 			flex-direction: column;
@@ -29,6 +38,17 @@
 			}
             @media (max-width: 1599px) {
 				max-width: 90%;
+			}
+            @media (max-width: 1099px) {
+				max-width: 100%;
+			}
+			@media (max-width: 767px) {
+				max-width: 50%;
+				margin-top: 10px;
+			}
+			@media (max-width: 575px) {
+				max-width: 80%;
+				font-size: 1rem;
 			}
         }
 	}

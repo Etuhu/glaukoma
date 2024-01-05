@@ -134,9 +134,15 @@ a {
     font-size: 2.67rem;
     line-height: 1;
     margin-bottom: 0;
-    // @media (max-width: 575px) {
-    //     font-size: 2rem;
-    // }
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+    @media (max-width: 575px) {
+        font-size: 2.4rem;
+    }
+    @media (max-width: 399px) {
+        font-size: 2.2rem;
+    }
 }
 
 .basic-link {
@@ -219,6 +225,9 @@ a {
     @media (max-width: 1399px) {
         padding: 15px;
     }
+    @media (max-width: 767px) {
+        font-size: 0.9rem;
+    }
     .text {
         padding-right: 35px;
     }
@@ -256,8 +265,17 @@ a {
     font-weight: 300;
     line-height: 1;
     transform: translateX(-70px);
-    @media (max-width: 1199px) {
+    @media (min-width: 992px) and (max-width: 1199px) {
         transform: translateX(0);
+    }
+    @media (max-width: 991px) {
+        transform: translateX(-55px);
+    }
+    @media (max-width: 799px) {
+        transform: translateX(0);
+    }
+    @media (max-width: 767px) {
+        text-align: center;
     }
 }
 
@@ -266,4 +284,13 @@ a {
     font-weight: 300;
     line-height: 1;
     margin-bottom: 20px;
+    @media (max-width: 767px) {
+        margin-bottom: 10px;
+    }
+    @media (max-width: 575px) {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 399px) {
+        font-size: 1.25rem;
+    }
 }

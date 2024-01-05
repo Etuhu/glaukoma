@@ -20,7 +20,7 @@
 		<div class="header header--index fixed-top">
 			<div class="container">
 				<div class="header-wrapper row">
-					<div class="col-xxl-2 col-lg-3 offset-xxl-1 offset-lg-0 col-4 logo-wrapper">
+					<div class="col-xxl-2 col-lg-3 offset-xxl-1 offset-lg-0 col-sm-4 col-5 logo-wrapper">
 						<a href="/"><img src="img/logo.svg" width="203" height="50" class="img-fluid logo" /></a>
 					</div>
 					<div class="col-xxl-8 col-lg-9 top-menu-wrapper hidden">
@@ -55,10 +55,10 @@
 						</nav>
 						<a href="#" class="basic-button order-link order-link--mobile">Записаться</a>
 					</div>
-					<div class="col-lg-2 col-4 offset-lg-0 offset-2 justify-content-end d-lg-none d-flex navbar-toggler-wrapper">
+					<div class="col-lg-2 col-4 offset-lg-0 offset-sm-2 offset-1 justify-content-end align-items-center d-lg-none d-flex">
 						<a href="#recordModal" class="basic-button header-modal-button" data-bs-toggle="modal" data-bs-target="#recordModal">Записаться</a>
 					</div>
-					<div class="col-lg-1 col-2 justify-content-end d-lg-none d-flex navbar-toggler-wrapper">
+					<div class="col-lg-1 col-2 justify-content-end align-items-center d-lg-none d-flex navbar-toggler-wrapper">
 						<button class="navbar-toggler show" type="button" data-bs-toggle="collapse" data-bs-target="#sitemenu" aria-controls="sitemenu" aria-expanded="false" aria-label="Раскрыть навигацию">
 							<span class="navbar-toggler-icon">
 								<span></span>
@@ -96,6 +96,7 @@
 									<path d="M7 57L15 63L23 57.0001" stroke="#525252" stroke-linejoin="round" />
 								</svg>
 							</a>
+							<a href="#" class="basic-button basic-button--mobile d-flex d-md-none mt-4 ms-auto me-auto" style="width: fit-content;">Записаться</a>
 						</div>
 					</div>
 				</div>
@@ -130,7 +131,7 @@
 					<div class="signature-wrapper">
 						<h2 class="basic-title text-center">Скрытая угроза</h2>
 						<div class="signature-row row">
-							<div class="signature-item col-lg-4">
+							<div class="signature-item col-md-4">
 								<div class="content">
 									<img class="signature-item-pic" src="img/hazard_1.png" width="120" height="120" />
 									<div class="signature-item-text">
@@ -138,7 +139,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="signature-item col-lg-4">
+							<div class="signature-item col-md-4">
 								<div class="content">
 									<img class="signature-item-pic" src="img/hazard_2.png" width="120" height="120" />
 									<div class="signature-item-text">
@@ -146,7 +147,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="signature-item col-lg-4">
+							<div class="signature-item col-md-4">
 								<div class="content">
 									<img class="signature-item-pic" src="img/hazard_3.png" width="120" height="120" />
 									<div class="signature-item-text">
@@ -292,7 +293,7 @@
 			<section class="therapy" id="therapy">
 				<div class="container">
 							<div class="row therapy-wrapper">
-								<div class="col-lg-5 col-xxl-4 offset-xxl-1 therapy-description">
+								<div class="col-md-6 col-lg-5 col-xxl-4 offset-xxl-1 therapy-description">
 									<h3 class="subtitle leftside-subtitle">Глаукому можно</h3>
 									<h2 class="basic-title">Вылечить</h2>
 									<div class="accordion accordion-therapy" id="accordionTherapy">
@@ -348,9 +349,9 @@
 											</div>
 										</div>
 									</div>
-									<a href="#" class="basic-button">Узнать цену</a>
+									<a href="#" class="basic-button basic-button--desktop d-md-inline-flex d-none">Узнать цену</a>
 								</div>
-								<div class="col-lg-7 therapy-image-block">
+								<div class="col-md-6 col-lg-7 therapy-image-block">
 									<div class="therapy-swiper-container">
 										<div class="swiper therapy-swiper">
 											<div class="swiper-wrapper">
@@ -358,30 +359,31 @@
 													<img src="img/therapy-1.jpg" class="img-fluid" width="757" height="512" />
 												</div>
 												<div class="swiper-slide therapy-item">
-													<img src="img/therapy-1.jpg" class="img-fluid" width="757" height="512" />
+													<img src="img/therapy-2.jpg" class="img-fluid" width="757" height="512" />
 												</div>
 												<div class="swiper-slide therapy-item">
-													<img src="img/therapy-1.jpg" class="img-fluid" width="757" height="512" />
+													<img src="img/therapy-3.jpg" class="img-fluid" width="757" height="512" />
 												</div>
 											</div>
 											<div class="swiper-pagination therapy-swiper-pagination"></div>
 										</div>
 									</div>
 								</div>
+								<a href="#" class="basic-button basic-button--mobile d-flex d-md-none mt-4 ms-auto me-auto" style="width: fit-content;">Узнать цену</a>
 							</div>
 				</div>
 			</section>
 			<section class="doctors" id="doctors">
 				<div class="container">
 					<div class="row doctors-top-row">
-						<div class="col-xxl-6 offset-xxl-1 col-lg-7 col-md-6 doctors-description">
+						<div class="col-xxl-6 offset-xxl-1 col-lg-7 doctors-description">
 							<h3 class="subtitle">Первые в Кузбассе</h3>
 							<h2 class="basic-title">Врачи-глаукоматологи</h2>
 							<p>Врачи офтальмологического центра «Хорошее зрение» проводят лечение глаукомы как медикаментозно, так и при помощи лазерных методик. Одно из ключевых составляющих в борьбе с глаукомой - регулярное наблюдение у лечащего врача. Лечение поможет вам улучшить общее состояние глаз и предотвратить прогрессирование болезни!</p>
 						</div>
-						<div class="col-xxl-4 col-lg-5 col-md-6 doctors-photo">
+						<!-- <div class="col-xxl-4 col-lg-5 doctors-photo">
 							<img src="img/empty-photo.jpg" class="img-fluid" width="599" height="441" />
-						</div>
+						</div> -->
 					</div>
 					<div class="row doctors-bottom-row">
 						<div class="col-xxl-9 offset-xxl-1 col-lg-10 doctors-slider-wrapper">
@@ -516,7 +518,7 @@
 					<div class="footer-top-row">
 						<div class="container">
 							<div class="row footer-top-row-wrapper">
-								<div class="col-xxl-5 col-lg-6 col-md-8 left-block">
+								<div class="col-xxl-5 col-lg-6 col-sm-8 left-block">
 									<div class="contacts">
 										<a href="/" class="logo-link"><img src="img/logo.svg" width="203" height="50" class="img-fluid logo" /></a>
 										<div class="address">
@@ -529,7 +531,7 @@
 									</div>
 									<a href="#" class="license-link" data-fancybox="license">Лицензия на осуществление медицинской деятельности</a>
 								</div>
-								<div class="col-xxl-3 col-md-4 center-block">
+								<div class="col-xxl-3 col-sm-4 center-block">
 									<div class="social">
 										<p>Подпишитесь, чтобы не пропустить актуальную и полезную информацию о глаукоме</p>
 										<div class="social-wrapper">
@@ -562,7 +564,7 @@
 					<div class="footer-bottom-row">
 						<div class="container">
 							<div class="row footer-bottom-row-wrapper">
-								<div class="footer-attention col-lg-4 col-md-6">Информация на сайте не является публичной офертой, сайт не содержит рекламных материалов, размещенные на сайте материалы носят информативный характер согласно Постановлению Правительства РФ от 11.05.2023 №736 © ООО&nbsp;ОЦ&nbsp;«ХОРОШЕЕ ЗРЕНИЕ»., 2011&nbsp;-&nbsp;2023 Все права защищены</div>
+								<div class="footer-attention col-lg-4">Информация на сайте не является публичной офертой, сайт не содержит рекламных материалов, размещенные на сайте материалы носят информативный характер согласно Постановлению Правительства РФ от 11.05.2023 №736 © ООО&nbsp;ОЦ&nbsp;«ХОРОШЕЕ ЗРЕНИЕ»., 2011&nbsp;-&nbsp;2023 Все права защищены</div>
 								<div class="footer-controls col-lg-8">
 									<div class="footer-controls-item">
 										<a href="#" class="stretched-link" target="blank"></a>

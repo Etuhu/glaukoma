@@ -14,6 +14,10 @@
         @media (max-width: 1199px) {
             padding: 100px 5% 50px 5%;
         }
+        @media (max-width: 575px) {
+            padding: 60px 5% 20px 5%;
+            border-radius: 10px;
+        }
         .about-content-image {
             position: absolute;
             top: -125px;
@@ -25,10 +29,21 @@
                 top: -100px;
                 border: 20px solid #fbfbfb;
             }
+            @media (max-width: 1199px) {
+                width: 120px;
+                height: 120px;
+                top: -80px;
+            }
+            @media (max-width: 575px) {
+                width: 100px;
+                height: 100px;
+                top: -50px;
+                border: 10px solid #fbfbfb;
+            }
             img {
                 @media (max-width: 1920px) {
                     width: 150px;
-                    height: 150px;
+                    height: auto;
                 }
             }
         }

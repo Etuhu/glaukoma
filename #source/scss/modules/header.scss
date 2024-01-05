@@ -8,7 +8,6 @@
             position: relative;
             padding-top: 30px;
             padding-bottom: 30px;
-            padding-left: 0;
             opacity: 1;
             transition: 0.2s ease;
             @media (max-width: 1920px) {
@@ -18,8 +17,11 @@
             // @media (max-width: 991px) {
             //     text-align: right;
             // }
+            @media (min-width: 576px) {
+                padding-left: 0;
+            }
             @media (max-width: 575px) {
-                padding-bottom: 50px;
+                padding-bottom: 20px;
                 overflow: hidden;
             }
             &.hidden {
@@ -180,13 +182,6 @@
         }
         .navbar-toggler-wrapper {
             align-items: center;
-            @media (max-width: 575px) {
-                align-items: flex-start;
-                padding-top: 10px;
-            }
-            @media (max-width: 399px) {
-                padding-top: 8px;
-            }
         }
         .navbar-toggler {
             position: relative;
