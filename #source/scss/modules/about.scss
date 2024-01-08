@@ -64,6 +64,34 @@
                     margin-bottom: 5px;
                 }
             }
+            ul {
+                list-style: none;
+            }
+            ul, ol {
+                padding-left: 1.5rem;
+                @media (max-width: 1099px) {
+                    padding-left: 1rem;
+                }
+            }
+            ul > li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                position: relative;
+                @media (max-width: 1099px) {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+                &::before {
+                    position: absolute;
+                    left: -15px;
+                    top: 0.7rem;
+                    display: block;
+                    width: 3px;
+                    height: 3px;
+                    content: "";
+                    background-color: $font-color;
+                }
+            }
         }
     }
 }
