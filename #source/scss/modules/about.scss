@@ -1,6 +1,8 @@
 .about {
     padding-top: 125px;
-    scroll-margin-top: 115px;
+    @media (max-width: 991px) {
+        padding-top: 70px;
+    }
     .about-content {
         position: relative;
         background-color: $ligntblue;

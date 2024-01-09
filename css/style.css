@@ -691,6 +691,37 @@ a {
   }
 }
 
+#about,
+#signature,
+#stages,
+#school,
+#therapy,
+#doctors,
+#faq,
+#feedback,
+#contacts {
+  scroll-margin-top: 115px;
+}
+@media (max-width: 991px) {
+  #about,
+  #signature,
+  #stages,
+  #school,
+  #therapy,
+  #doctors,
+  #faq,
+  #feedback,
+  #contacts {
+    scroll-margin-top: 75px;
+  }
+}
+
+@media (max-width: 991px) {
+  #feedback {
+    scroll-margin-top: 125px;
+  }
+}
+
 @keyframes slideme {
   0% {
     left: -30px;
@@ -760,6 +791,7 @@ a {
 }
 .header {
   background-color: #FBFBFB;
+  box-shadow: 0px -3px 5px 2px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 991px) {
   .header .header-wrapper {
@@ -1118,7 +1150,7 @@ a {
 }
 @media (max-width: 991px) {
   .top-slider {
-    height: 100vh;
+    height: 100dvh;
   }
 }
 .top-slider .top-slider__bg {
@@ -1129,7 +1161,7 @@ a {
 }
 @media (max-width: 991px) {
   .top-slider .top-slider__bg {
-    height: 100vh;
+    height: 100dvh;
   }
 }
 .top-slider .content-wrapper {
@@ -1276,7 +1308,11 @@ a {
 
 .about {
   padding-top: 125px;
-  scroll-margin-top: 115px;
+}
+@media (max-width: 991px) {
+  .about {
+    padding-top: 70px;
+  }
 }
 .about .about-content {
   position: relative;
@@ -1499,7 +1535,7 @@ a {
   .stages .stages-wrapper .stages-description > .content {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    min-height: 850px;
+    min-height: 700px;
   }
 }
 @media (max-width: 1699px) {
@@ -1507,6 +1543,26 @@ a {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     min-height: 750px;
+  }
+}
+@media (max-width: 1499px) {
+  .stages .stages-wrapper .stages-description > .content {
+    min-height: 810px;
+  }
+}
+@media (max-width: 1399px) {
+  .stages .stages-wrapper .stages-description > .content {
+    min-height: 700px;
+  }
+}
+@media (max-width: 1299px) {
+  .stages .stages-wrapper .stages-description > .content {
+    min-height: 740px;
+  }
+}
+@media (max-width: 1199px) {
+  .stages .stages-wrapper .stages-description > .content {
+    min-height: 670px;
   }
 }
 @media (max-width: 991px) {
@@ -3509,6 +3565,7 @@ a {
   .footer .footer-top-row .left-block .license-link {
     margin: 20px auto 0;
     max-width: 75%;
+    text-align: center;
   }
 }
 .footer .footer-top-row .left-block .license-link:hover {

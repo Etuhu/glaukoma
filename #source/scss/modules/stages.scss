@@ -24,12 +24,24 @@
 			    @media (max-width: 1920px) {
                     padding-left: 2.5rem;
                     padding-right: 2.5rem;
-                    min-height: 850px;
+                    min-height: 700px;
                 }
                 @media (max-width: 1699px) {
                     padding-left: 1.5rem;
                     padding-right: 1.5rem;
                     min-height: 750px;
+                }
+                @media (max-width: 1499px) {
+                    min-height: 810px;
+                }
+                @media (max-width: 1399px) {
+                    min-height: 700px;
+                }
+                @media (max-width: 1299px) {
+                    min-height: 740px;
+                }
+                @media (max-width: 1199px) {
+                    min-height: 670px;
                 }
                 @media (max-width: 991px) {
                     min-height: 615px;

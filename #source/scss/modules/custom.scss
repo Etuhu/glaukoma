@@ -294,3 +294,24 @@ a {
         font-size: 1.25rem;
     }
 }
+
+#about,
+#signature,
+#stages,
+#school,
+#therapy,
+#doctors,
+#faq,
+#feedback,
+#contacts {
+    scroll-margin-top: 115px;
+    @media (max-width: 991px) {
+        scroll-margin-top: 75px;
+    }
+}
+
+#feedback {
+    @media (max-width: 991px) {
+        scroll-margin-top: 125px;
+    }
+}
