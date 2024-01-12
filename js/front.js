@@ -408,17 +408,53 @@ stagesTabButtons.forEach(button => {
     });
 });
 
-//Подключение кастомного скролла при ширине экрана больше 991 пикселя
-if ($(window).width() > 991) {
-    (function ($) {
-        $(window).on("load", function () {
-            $(".text-content-scroll").mCustomScrollbar({
-                theme: 'dark',
-                scrollInertia: "300",
-                advanced: {
-                    updateOnContentResize: "true",
-                },
-            });
-        });
-    })(jQuery);
+//Анимация первого слайда
+let topSlider = document.querySelector(".top-slider");
+let mainVideo = document.querySelector("video.promo-video");
+let promoPic = document.querySelector(".top-slider__bg--pic");
+let topSliderContent = document.querySelector(".top-slider .content-wrapper");
+let header = document.querySelector(".header");
+let topSliderLogo = document.querySelector(".top-slider-logo");
+
+let topSliderAnimationHandler = function () {
+    let playingVideoHandler = function () {
+        mainVideo.play();
+    }
+    let sliderContentAnimation = function () {
+        topSliderContent.classList.add("show");
+        header.classList.remove("hidden");
+        header.classList.add("show");
+        topSliderLogo.classList.add("hidden");
+    }
+    mainVideo.addEventListener("canplaythrough", function (){
+        if(mainVideo.played.length === 0 ) {
+            playingVideoHandler();
+            sliderContentAnimation();
+        }
+    });
+    mainVideo.addEventListener("ended", function (){
+        mainVideo.classList.remove("show");
+        mainVideo.classList.add("hidden");
+        promoPic.classList.remove("hidden");
+        promoPic.classList.add("show");
+        document.body.classList.remove("fixed-clear");
+    });
 };
+
+$(function() {
+
+    // Проверяем запись в куках о посещении
+    // Если запись есть - ничего не происходит
+      if (!$.cookie('topSliderAnimation')) {
+        topSliderAnimationHandler();
+      } else {
+        topSlider.classList.add("clear");
+        document.body.classList.remove("fixed-clear");
+        header.classList.remove("hidden");
+      };
+       $.cookie('topSliderAnimation', true, {
+       // Время хранения cookie в днях
+          expires: 7,
+          path: '/'
+     });
+});

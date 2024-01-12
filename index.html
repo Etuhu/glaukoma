@@ -14,10 +14,10 @@
 		<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
 		<link href="css/style.css.map" media="screen" rel="stylesheet" type="text/css" />
 	</head>
-	<body>
+	<body class="fixed-clear">
 		<div id="pre-loader" class="pre-loader" style="opacity: 0; display: none"></div>
 		<div class="fader"></div>
-		<div class="header header--index fixed-top">
+		<div class="header header--index fixed-top hidden">
 			<div class="container">
 				<div class="header-wrapper row">
 					<div class="col-xxl-2 col-lg-3 offset-xxl-1 offset-lg-0 col-sm-4 col-5 logo-wrapper">
@@ -74,8 +74,14 @@
 					<source srcset="img/slide_mobile.jpg" media="(max-width: 575px)" />
 					<source srcset="img/slide_tablet.jpg" media="(max-width: 991px)" />
 					<source srcset="img/slide.jpg" />
-					<img class="img-fluid w-100 top-slider__bg" src="img/slide.jpg" width="2560" height="1440" />
+					<img class="img-fluid w-100 top-slider__bg top-slider__bg--pic hidden" src="img/slide.jpg" width="2560" height="1440" />
 				</picture>
+				<video muted preload="auto" autoplay  playsinline class="img-fluid w-100 top-slider__bg top-slider__bg--video show promo-video" width="2560" height="1440">
+                    <source src="img/promo_cycle_min.mp4" type="video/mp4">
+                </video>
+				<div class="top-slider-logo">
+					<img src="img/logo.svg" width="406" height="100" class="img-fluid" />
+				</div>
 				<div class="container content-wrapper">
 					<div class="top-slider__content top-slider__content--top">
 						<div class="row">
@@ -672,12 +678,65 @@
 				</div>
 			</div>
 		</div>
+		<!-- <script>
+			let mainVideo = document.querySelector("video.promo-video");
+			let promoPic = document.querySelector(".top-slider__bg--pic");
+			let topSliderContent = document.querySelector(".top-slider .content-wrapper");
+			let header = document.querySelector(".header");
+			let sliderText = document.querySelector(".top-slider .top-slider__title");
+			let sliderFooter = document.querySelector(".top-slider .top-slider__subtitle");
+			let topSliderLogo = document.querySelector(".top-slider-logo");
+			let playingVideoHandler = function () {
+				mainVideo.play();
+			}
+			let sliderContentAnimation = function () {
+				topSliderContent.classList.add("show");
+				header.classList.remove("hidden");
+				topSliderLogo.classList.add("hidden");
+			}
+			mainVideo.addEventListener("canplaythrough", function (){
+				if(mainVideo.played.length === 0 ) {
+					playingVideoHandler();
+					sliderContentAnimation();
+				}
+			});
+			mainVideo.addEventListener("ended", function (){
+				mainVideo.classList.remove("show");
+				mainVideo.classList.add("hidden");
+				promoPic.classList.remove("hidden");
+				promoPic.classList.add("show");
+				document.body.classList.remove("fixed-clear");
+			});
+		</script>
+		<script>
+			$(function() {
+
+			  // Проверяем запись в куках о посещении
+			  // Если запись есть - ничего не происходит
+				if (!$.cookie('hideModal')) {
+					var delay_popup = 100;
+					if (citySelector) {
+					  setTimeout(function() {
+						  $(window).on('load', function() {
+							$('#citySelector').modal('show');
+						  });
+						}, delay_popup);
+					}
+				};
+				 $.cookie('hideModal', true, {
+				 // Время хранения cookie в днях
+					expires: 14,
+					path: '/'
+			   });
+			});
+		</script> -->
 		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
 		<script type="text/javascript" src="js/wow.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
 		<script type="text/javascript" src="js/fancybox.umd.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
 		<script type="text/javascript" src="js/front.js"></script>
 	</body>
 </html>
